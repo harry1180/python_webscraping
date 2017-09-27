@@ -1,0 +1,29 @@
+fail_parent_if_instance_fails is ticked
+FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN is ticked
+reusable is not ticked
+treat_inputlink_as_and is ticked
+
+Stop on errors is ticked
+Save session log for these runs is ticked
+Pre 85 Timestamp Compatibility is ticked
+Override tracing is ticked
+
+N_ROL_TRX_LINE_GL_DISTRI
+Target load Type  :   Bulk
+Reject file directory:   $PMRootDir/DATA/EDWTD_AR/reject
+Reject Filename is:   n_rol_trx_line_gl_distri1.bad
+
+N_ROL_TRX_LINE_GL_DISTRI   :insert is ticked
+N_ROL_TRX_LINE_GL_DISTRI   :Update as Update is  not ticked
+N_ROL_TRX_LINE_GL_DISTRI   :Update as Insert is  not ticked
+N_ROL_TRX_LINE_GL_DISTRI   :Update else Insert is  not ticked
+
+
+N_ROL_TRX_LINE_GL_DISTRI   :Table Prefix name:   $$FINLGLDB
+
+
+Session Log File Name:   s_m_N_ROL_TRX_LINE_GL_DISTRI.log
+Session Log File directory:   $PMSessionLogDir\
+
+Parameter File Name:   $PMRootDir/ctrl/db.parm
+Pushdown Optimization :    Full

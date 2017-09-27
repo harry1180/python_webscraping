@@ -1,0 +1,29 @@
+fail_parent_if_instance_fails is ticked
+FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN is ticked
+reusable is not ticked
+treat_inputlink_as_and is ticked
+
+Stop on errors is ticked
+Save session log for these runs is ticked
+Pre 85 Timestamp Compatibility is ticked
+Override tracing is ticked
+
+N_DIRECT_CORPORATE_ADJUSTMENT
+Target load Type  :   Bulk
+Reject file directory:   $PMRootDir/DATA/EDWTD_AR/reject
+Reject Filename is:   n_direct_corporate_adjustment1.bad
+
+N_DIRECT_CORPORATE_ADJUSTMENT   :insert is ticked
+N_DIRECT_CORPORATE_ADJUSTMENT   :Update as Update is  not ticked
+N_DIRECT_CORPORATE_ADJUSTMENT   :Update as Insert is  not ticked
+N_DIRECT_CORPORATE_ADJUSTMENT   :Update else Insert is  not ticked
+
+
+N_DIRECT_CORPORATE_ADJUSTMENT   :Table Prefix name:   $$FINLGLVWDB
+
+
+Session Log File Name:   s_m_N_DIRECT_CORPORATE_ADJUSTMENT.log
+Session Log File directory:   $PMSessionLogDir\
+
+Parameter File Name:   $PMRootDir/ctrl/db.parm
+Pushdown Optimization :    Full

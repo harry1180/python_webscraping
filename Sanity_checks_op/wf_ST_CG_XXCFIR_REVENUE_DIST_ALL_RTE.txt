@@ -1,0 +1,29 @@
+fail_parent_if_instance_fails is ticked
+FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN is ticked
+reusable is not ticked
+treat_inputlink_as_and is ticked
+
+Stop on errors is ticked
+Save session log for these runs is ticked
+Pre 85 Timestamp Compatibility is ticked
+Override tracing is ticked
+
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE
+Target load Type  :   Normal
+Reject file directory:   $PMBadFileDir\
+Reject Filename is:   st_cg_xxcfir_revenue_dist_all_rte1.bad
+
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE   :insert is ticked
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE   :Update as Update is  not ticked
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE   :Update as Insert is  not ticked
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE   :Update else Insert is  not ticked
+
+
+ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE   :Table Prefix name:   $$STGDB
+
+
+Session Log File Name:   s_m_ST_CG_XXCFIR_REVENUE_DIST_ALL_RTE.log
+Session Log File directory:   $PMSessionLogDir\
+
+Parameter File Name:   $PMRootDir/ctrl/db.parm
+Pushdown Optimization :    Full

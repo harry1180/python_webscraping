@@ -1,0 +1,41 @@
+fail_parent_if_instance_fails is ticked
+FAIL_PARENT_IF_INSTANCE_DID_NOT_RUN is ticked
+reusable is not ticked
+treat_inputlink_as_and is ticked
+
+Stop on errors is ticked
+Save session log for these runs is ticked
+Pre 85 Timestamp Compatibility is ticked
+Override tracing is ticked
+
+WI_XLA_REVENUE_TRANSFER_INCR
+Target load Type  :   Normal
+Reject file directory:   $PMBadFileDir\
+Reject Filename is:   wi_xla_revenue_transfer_incr1.bad
+
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1
+Target load Type  :   Normal
+Reject file directory:   $PMBadFileDir\
+Reject Filename is:   ex_xxcfir_revenue_dist_v_ar_rt11.bad
+
+WI_XLA_REVENUE_TRANSFER_INCR   :insert is ticked
+WI_XLA_REVENUE_TRANSFER_INCR   :Update as Update is  not ticked
+WI_XLA_REVENUE_TRANSFER_INCR   :Update as Insert is  not ticked
+WI_XLA_REVENUE_TRANSFER_INCR   :Update else Insert is  not ticked
+
+
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1   :insert is ticked
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1   :Update as Update is  not ticked
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1   :Update as Insert is  not ticked
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1   :Update else Insert is  not ticked
+
+
+WI_XLA_REVENUE_TRANSFER_INCR   :Table Prefix name:   $$STGDB
+EX_XXCFIR_REVENUE_DIST_V_AR_RT1   :Table Prefix name:   $$EXCEPDB
+
+
+Session Log File Name:   s_m_WI_XLA_REVENUE_TRANSFER_INCR1.log
+Session Log File directory:   $PMSessionLogDir\
+
+Parameter File Name:   $PMRootDir/ctrl/db.parm
+Pushdown Optimization :    Full
