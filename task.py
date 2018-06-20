@@ -1,6 +1,7 @@
 import xlrd
 import csv
 import json
+print ('script starts here')
 def csv_from_excel():
     wb = xlrd.open_workbook('ISO10383_MIC.xls')
     sh = wb.sheet_by_name('MICs List by CC')
@@ -11,15 +12,20 @@ def csv_from_excel():
         wr.writerow(sh.row_values(rownum))
 
     your_csv_file.close()
-with open('your_csv_file.csv') as f:
-    
-    a = [{k: str(v) for k, v in row.items()}
-         for row in csv.DictReader(f, skipinitialspace=True)]
-    with open ('output.json','w') as o:
+try:
+    with open('your_csv_file.csv') as f:
         
-        for item in a:
-            json.dump(item, o, indent=4, sort_keys=True)
-            o.write('\n')
+        a = [{k: str(v) for k, v in row.items()}
+             for row in csv.DictReader(f, skipinitialspace=True)]
+        with open ('output.json','w') as o:
+            try:
+                for item in a:
+                    json.dump(item, o, indent=4, sort_keys=True)
+                    o.write('\n')
+            except Exception as e:
+                print (str(e))
+except Exception as e:
+    print (str(e))
 
 def s3_file_upload(local_file, s3_bucket, s3_path, s3_file_nm='default', aws_profile=AWS_PROFILE):
 
@@ -34,4 +40,4 @@ def s3_file_upload(local_file, s3_bucket, s3_path, s3_file_nm='default', aws_pro
     k = bucket.new_key(full_key_name)
     k.set_contents_from_filename(local_file)
 
-print('end')
+print('end of the script')
