@@ -1,6 +1,7 @@
 import xlrd
 import csv
 import json
+StartTime=time.time();
 print ('script starts here')
 def csv_from_excel():
     wb = xlrd.open_workbook('ISO10383_MIC.xls')
@@ -40,4 +41,7 @@ def s3_file_upload(local_file, s3_bucket, s3_path, s3_file_nm='default', aws_pro
     k = bucket.new_key(full_key_name)
     k.set_contents_from_filename(local_file)
 
+s3_file_upload('output.json',s3_bucket,s3_path,s3_file_nm,aws_profile)
 print('end of the script')
+EndTime=time.time()
+print ("execution time: ",EndTime-StartTime)
