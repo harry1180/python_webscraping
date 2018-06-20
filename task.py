@@ -1,6 +1,9 @@
 import xlrd
 import csv
 import json
+from boto.s3.connection import Bucket, S3Connection
+from boto.s3.key import Key
+import time
 StartTime=time.time();
 print ('script starts here')
 def csv_from_excel():
