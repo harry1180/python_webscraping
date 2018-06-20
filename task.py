@@ -19,7 +19,7 @@ with open('your_csv_file.csv') as f:
         
         for item in a:
             json.dump(item, o, indent=4, sort_keys=True)
-            o.write('\n,')
+            o.write('\n')
 
 def s3_file_upload(local_file, s3_bucket, s3_path, s3_file_nm='default', aws_profile=AWS_PROFILE):
 
